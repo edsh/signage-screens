@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>EDSH Kiosk-Screen Charlie</title>
+    <meta name="description" content="Displayinhalt für das Charlie-Display der Landebar">
+    <meta name="author" content="Adrian Föder, Luftsportverein Backnang-Heiningen e.V.">
+
+    <link rel="flightradar" href="https://www.flightradar24.com/48.92,9.45/14">
+
+    <script>
+        // redirect immediately to FlightRadar24
+        (function(window, document) {
+            const href = document.querySelector("link[rel=flightradar]")?.href;
+            href && (window.location.href = href);
+        })(window, document)
+    </script>
+
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            -webkit-font-smoothing: antialiased;
+            margin: 0;
+        }
+
+        img, picture, video, canvas, svg {
+            display: block;
+            max-width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+</body>
+</html>
