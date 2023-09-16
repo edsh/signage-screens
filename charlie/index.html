@@ -15,7 +15,7 @@
         // redirect immediately to FlightRadar24
         (function(window, document) {
             const href = document.querySelector("link[rel=flightradar]")?.href;
-            href && window.setTimeout(() => { window.location.href = href}, 5000);
+            href && window.setTimeout(() => { window.location.href = href}, 20000);
         })(window, document)
     </script>
 
@@ -38,6 +38,6 @@
 </head>
 
 <body>
-
+<p>Eine Weiterleitung auf Flightradar24 findet in 20 Sekunden statt.</p>
 </body>
 </html>
